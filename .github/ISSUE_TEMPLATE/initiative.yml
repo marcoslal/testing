@@ -8,8 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this initiative!
-        From the ProdOps team we'll help you to share all of them.
+        Thanks for taking the time to fill out this initiative! From the ProdOps team we'll help you to share all of them.
 
 - type: textarea
     id: whatidea
