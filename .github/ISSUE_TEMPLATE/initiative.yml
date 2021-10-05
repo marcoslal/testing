@@ -1,0 +1,75 @@
+name: Initiative Template
+description: File an initiative description.
+title: "[Initiative]: "
+labels: ["initiative"]
+assignees:
+  - marcoslal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this initiative!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: whatidea
+    attributes:
+      label: What is the idea you would like to implement?
+      description: Also tell us, what did you expect to happen? Mind to explain the expected outcome and the value that brings to your product/team.
+      placeholder: Use this field to describe
+      value: "We've got a new initiative!"
+    validations:
+      required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skills of ProdOps
+      multiple: true
+      description: What main skill are you requesting support from?
+      options:
+        - Communication
+        - Delivery
+        - Invoincing
+        - Software Management
+        - UX/UI
+    validations:
+      required: true
+      
+      
+  - type: dropdown
+    id: status
+    attributes:
+      label: issue status
+      description: What is the current status of the issue?
+      options:
+        - To be refined
+        - Analysis
+        - Backlog
+        - In Progress
+        - Blocked
+        - Done
+        - Closed
+    validations:
+      required: true
+      
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Conditions
+      description: By submitting this issue, you agree to out conditions and process to implement or reject the initiative sugestion in our [ProdOps conditions](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
