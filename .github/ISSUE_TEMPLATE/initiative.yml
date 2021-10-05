@@ -10,7 +10,7 @@ body:
       value: |
         Thanks for taking the time to fill out this initiative! From the ProdOps team we'll help you to share all of them.
 
-- type: textarea
+  - type: textarea
     id: whatidea
     attributes:
       label: What is the idea you would like to implement?
