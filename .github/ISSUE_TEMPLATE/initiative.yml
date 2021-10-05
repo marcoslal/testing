@@ -24,7 +24,7 @@ body:
     attributes:
       label: Skills of ProdOps
       multiple: true
-      description: What main skill are you requesting support from?
+      description: What main skill are you requesting support from? Select all the ones you think that apply to your initiative.
       options:
         - Communication
         - Delivery
@@ -72,7 +72,7 @@ body:
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com | phone number
+      placeholder: ex. email@example.com or phone number
     validations:
       required: false
 
