@@ -38,7 +38,7 @@ body:
   - type: dropdown
     id: status
     attributes:
-      label: issue status
+      label: Status
       description: What is the current status of the issue? Leave the field for the team if you're creating the task now.
       options:
         - To be refined
@@ -54,7 +54,7 @@ body:
   - type: dropdown
     id: size
     attributes:
-      label: issue size
+      label: Size
       description: Leave the field for the team if you're creating the task now.
       options:
         - NA
