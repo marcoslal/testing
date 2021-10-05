@@ -18,12 +18,13 @@ body:
       placeholder: Use this text box to describe.
     validations:
       required: true
+      
   - type: dropdown
     id: skill
     attributes:
       label: Skills of ProdOps
       multiple: true
-      description: What main skill are you requesting support from? Select all the ones you think that apply to your initiative.
+      description: What main skills in ProdOps is your initiative gonna need? Select all the ones you think that apply to your initiative.
       options:
         - Communication
         - Delivery
@@ -38,7 +39,7 @@ body:
     id: status
     attributes:
       label: issue status
-      description: What is the current status of the issue?
+      description: What is the current status of the issue? Leave the field for the team if you're creating the task now.
       options:
         - To be refined
         - Analysis
@@ -48,13 +49,13 @@ body:
         - Done
         - Closed
     validations:
-      required: true
+      required: false
       
   - type: dropdown
     id: size
     attributes:
       label: issue size
-      description: Implementation team will define a size for it.
+      description: Leave the field for the team if you're creating the task now.
       options:
         - NA
         - XS
@@ -75,12 +76,15 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: logs
+  - type: input
+    id: attachments
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Attachments Info
+      description: Share links to existing attachments
+      placeholder: Links to relevant existing documents.
+    validations:
+      required: false
+      
   - type: checkboxes
     id: terms
     attributes:
