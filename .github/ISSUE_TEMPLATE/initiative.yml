@@ -58,6 +58,21 @@ body:
     validations:
       required: true
       
+  - type: dropdown
+    id: size
+    attributes:
+      label: issue size
+      description: Implementation team will define a size for it.
+      options:
+        - NA
+        - XS
+        - S
+        - M
+        - L
+        - XL
+    validations:
+      required: false
+      
 
   - type: textarea
     id: logs
@@ -74,6 +89,3 @@ body:
         - label: I agree to follow this project's Code of Conduct
           required: true
  
-  - type: date
-    one:
-      something_on: 2010-02-11
