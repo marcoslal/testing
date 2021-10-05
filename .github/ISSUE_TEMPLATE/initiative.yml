@@ -76,7 +76,7 @@ body:
     validations:
       required: false
 
-- type: textarea
+  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
