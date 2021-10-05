@@ -14,9 +14,8 @@ body:
     id: whatidea
     attributes:
       label: What is the idea you would like to implement?
-      description: Also tell us, what did you expect to happen? Mind to explain the expected outcome and the value that brings to your product/team.
-      placeholder: Use this field to describe
-      value: "We've got a new initiative!"
+      description: Tell us also what do you expect to happen. Mind to explain the expected outcome and the value that brings to your product/team.
+      placeholder: Use this text box to describe.
     validations:
       required: true
   - type: dropdown
