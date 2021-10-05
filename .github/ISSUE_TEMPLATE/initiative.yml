@@ -18,7 +18,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what's the idea?
+    id: what idea
     attributes:
       label: What is the idea you would like to implement?
       description: Also tell us, what did you expect to happen? Mind to explain the expected outcome and the value that brings to your product/team.
